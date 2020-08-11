@@ -1,0 +1,9 @@
+[package]
+name = "U2800"
+version = "1.0.0"
+authors = ["Vulco"]
+license = "LICENSE"
+
+[dependencies]
+enigo = "0.0.14"
+hotkey = "0.3.1"
